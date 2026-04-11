@@ -1,0 +1,415 @@
+/* ===========================
+   Reset & Base
+=========================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f7fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+a {
+  color: #1a6fa8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ===========================
+   Header
+=========================== */
+.site-header {
+  background: #0d1b2a;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.site-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.site-nav a {
+  color: #cdd8e3;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.site-nav a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ===========================
+   Hero
+=========================== */
+.hero {
+  background: linear-gradient(135deg, #0d1b2a 0%, #1a6fa8 100%);
+  color: #fff;
+  padding: 80px 24px 72px;
+  text-align: center;
+}
+
+.hero-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  color: #c8dff0;
+}
+
+/* ===========================
+   Products Section
+=========================== */
+.products-section {
+  padding: 64px 24px;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0d1b2a;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+/* ===========================
+   Product Card
+=========================== */
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+}
+
+.product-icon-wrap {
+  background: #e8f2fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.product-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 22px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background: #1a6fa8;
+}
+
+.product-info {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.product-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0d1b2a;
+}
+
+.product-desc {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ===========================
+   Screenshots
+=========================== */
+.product-screenshots {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.product-screenshots::-webkit-scrollbar {
+  height: 4px;
+}
+
+.product-screenshots::-webkit-scrollbar-thumb {
+  background: #c0d4e8;
+  border-radius: 4px;
+}
+
+.screenshot {
+  width: 90px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  border: 1px solid #e0e8f0;
+}
+
+/* ===========================
+   Store Buttons
+=========================== */
+.product-actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-store {
+  display: inline-block;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.btn-store:hover {
+  opacity: 0.85;
+  text-decoration: none;
+}
+
+.store-badge {
+  height: 48px;
+  width: auto;
+}
+
+.badge-fallback {
+  display: inline-block;
+  background: #222;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 8px;
+  letter-spacing: 0.3px;
+}
+
+/* ===========================
+   Footer
+=========================== */
+.site-footer {
+  background: #0d1b2a;
+  color: #8aa3b8;
+  padding: 32px 24px;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-inner p {
+  font-size: 0.9rem;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav a {
+  color: #8aa3b8;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ===========================
+   Privacy Page
+=========================== */
+.privacy-page {
+  padding: 56px 24px 80px;
+}
+
+.privacy-inner {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.privacy-inner h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0d1b2a;
+  margin-bottom: 24px;
+}
+
+.privacy-inner > p {
+  margin-bottom: 16px;
+  color: #444;
+  font-size: 0.97rem;
+}
+
+/* Table of Contents */
+.privacy-toc {
+  background: #e8f2fb;
+  border-left: 4px solid #1a6fa8;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin: 28px 0 40px;
+}
+
+.privacy-toc ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.privacy-toc a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1a6fa8;
+}
+
+.privacy-toc a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+.privacy-inner section {
+  margin-bottom: 40px;
+}
+
+.privacy-inner h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0d1b2a;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #e0e8f0;
+}
+
+.privacy-inner h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a6fa8;
+  margin: 16px 0 8px;
+}
+
+.privacy-inner p {
+  margin-bottom: 12px;
+  color: #444;
+  font-size: 0.97rem;
+}
+
+.privacy-inner ul {
+  margin: 8px 0 12px 20px;
+  color: #444;
+  font-size: 0.97rem;
+}
+
+.privacy-inner ul li {
+  margin-bottom: 6px;
+}
+
+.privacy-inner a {
+  color: #1a6fa8;
+  word-break: break-all;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    height: auto;
+    padding: 14px 20px;
+    gap: 10px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .privacy-inner h1 {
+    font-size: 1.5rem;
+  }
+}

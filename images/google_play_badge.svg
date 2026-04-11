@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="54" viewBox="0 0 180 54">
+  <rect width="180" height="54" rx="8" fill="#1a1a1a"/>
+  <text x="50" y="20" font-family="Arial,sans-serif" font-size="9" fill="#aaa" text-anchor="middle">GET IT ON</text>
+  <text x="90" y="38" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">Google Play</text>
+  <!-- Play triangle icon -->
+  <polygon points="16,14 16,40 36,27" fill="#34a853"/>
+</svg>
